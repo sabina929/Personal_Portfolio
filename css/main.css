@@ -7,7 +7,9 @@
   --quaternary-color: #a15b65;
   --quinary-color: #d3b5b9;
   --senary-color: #5c1d30;
-
+  --works-bg-color:#3b2049;
+  --button-color: #a34039;
+  --input-color: #d3b5b9;
   --logo: #a15b65;
   --foreground: var(--quinary-color);
   --background: var(--dark);
@@ -22,7 +24,9 @@
   --quaternary-color: #a15b65;
   --quinary-color: #d3b5b9;
   --senary-color: #a34039;
-
+  --works-bg-color:#826fa8;
+  --button-color: #5c1d30;
+    --input-color: hsl(0, 25%, 85%);
   --logo: #826fa8;
   --foreground: var(--dark);
   --background: var(--light);
@@ -368,6 +372,7 @@ header nav.small-screen.open{
   display: -ms-flexbox;
   display: flex;
   height: 84vh;
+  width: auto;
   animation: menuDown 1s cubic-bezier(0.23, 0.28, 0.34, 0.93) forwards;
 }
 
@@ -479,7 +484,7 @@ header nav.small-screen ul li a:hover::after {
 #header .nav-button {
   position: fixed;
   top: 30px;
-  right: 115px;
+  right: 90px;
   z-index: 15;
   width: 36px;
   height: 30px;
@@ -662,7 +667,7 @@ main {
   transition: opacity 0.8s ease-in;
   scroll-snap-type: y mandatory;
   margin: 0 auto;
-  /* overflow: scroll; */
+  overflow-x: hidden;
 }
 
 main #hero {
@@ -701,6 +706,7 @@ main #hero .portfolio-icons {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 30px;
 }
 
 main #hero .portfolio-icons a {
@@ -978,7 +984,7 @@ main #works .works-container .proj-link {
   margin: 50px;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  background-color: var(--secondary-color);
+  background-color: var(--works-bg-color);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -1009,7 +1015,7 @@ main #works .all-projects {
   text-decoration: none;
   text-transform: capitalize;
   margin: 60px auto;
-  background-color: var(--tertiary-color);
+  background-color: var(--button-color);
   color: var(--light);
   font-size: 1.2rem;
   padding: 0.8em 1.6em;
@@ -1018,6 +1024,7 @@ main #works .all-projects {
   transition: all 0.3s ease;
   line-height: 1;
   cursor: pointer;
+  text-align: center;
 }
 
 main #works .all-projects:hover {
@@ -1097,7 +1104,7 @@ main #contact .contact-form form .form-group:nth-child(1) div {
 
 main #contact .contact-form form .form-group:nth-child(1) div label {
   display: block;
-  color: var(--quaternary-color);
+  color: var(--logo);
   font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   margin-bottom: 15px;
@@ -1110,7 +1117,8 @@ main #contact .contact-form form .form-group:nth-child(1) div input {
   outline: none;
   padding: 5px 10px;
   font-size: 1.1rem;
-  background-color: var(--quinary-color);
+  background-color: var(--input-color);
+  color: var(--dark);
 }
 
 main #contact .contact-form form .form-group:nth-child(1) div input:focus {
@@ -1123,7 +1131,7 @@ main #contact .contact-form form .form-group {
 
 main #contact .contact-form form .form-group label {
   display: block;
-  color: var(--quaternary-color);
+  color: var(--logo);
   font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   margin-bottom: 15px;
@@ -1136,7 +1144,8 @@ main #contact .contact-form form .form-group input {
   outline: none;
   padding: 5px 10px;
   font-size: 1.1rem;
-  background-color: var(--quinary-color);
+  background-color: var(--input-color);
+  color: var(--dark);
 }
 
 main #contact .contact-form form .form-group input:focus {
@@ -1150,7 +1159,8 @@ main #contact .contact-form form .form-group textarea {
   outline: none;
   padding: 5px 10px;
   font-size: 1.1rem;
-  background-color: var(--quinary-color);
+  background-color: var(--input-color);
+  color: var(--dark);
   resize: none;
 }
 
@@ -1244,6 +1254,10 @@ footer p {
 
 /* 600px */
 @media only screen and (max-width: 600px) {
+
+  header {
+     padding: 30px ;
+  }
   .wrapper .loader h2 {
     font-size: 1.6rem;
   }
@@ -1255,60 +1269,165 @@ footer p {
 
   /* HERO */
 
-  main #hero {
-    scroll-margin: 10px;
-    scroll-snap-align: start;
-    scroll-snap-stop: normal;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 30px;
-    margin: 160px auto 60px auto;
+  main #hero { 
+    padding: 30px 0;
+    margin: 142px 50px 60px 50px;
   }
+main #hero .portfolio-icons {
+  position: fixed;
+  left: 3%;
+    /* top: 25%; */
+    top: 215px;
+    width: 30px;
+    margin-top: 0;
+}
 
   main #hero .headings h1 {
-    margin-top: 40px;
-    font-family: "Playfair Display", serif;
-    font-size: 2rem;
+    margin-top: 10px;
+    font-size: 2.2rem;
     letter-spacing: 0.1rem;
-    color: var(--primary-color);
     font-weight: 800;
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
-    opacity: 0;
-    -webkit-animation: emailFadeDown 1s ease 0.8s forwards;
-    animation: emailFadeDown 1s ease 0.8s forwards;
     margin-bottom: 30px;
+    text-align: center;
   }
   main #hero .headings h1 div {
-    -webkit-transform: translateY(-25px);
-    transform: translateY(-25px);
-    opacity: 0;
     word-spacing: 0.5rem;
-    font-size: 2.4rem;
-    -webkit-animation: titleDown 1.2s ease 1.3s forwards;
-    animation: titleDown 1.2s ease 1.3s forwards;
+    font-size: 2.8rem;
+     text-align: center;
   }
 
   main #hero .headings p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.2rem;
-    font-style: italic;
+    font-size: 1.16rem;
     letter-spacing: 0.08rem;
     color: var(--foreground);
     line-height: 32px;
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-    opacity: 0;
+    text-align: center;
   }
+
+  main #hero .email {
+  z-index: 0;
+  right: 0.5%;
+  /* top: 17.5%; */
+  top: 190px;
+  width: 30px;
+  margin-top: 0;
+  
 }
+
+main #hero .email a p {
+  font-size: 0.9rem;
+
+}
+
+/* ABOUT */
+
+main #about {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 120px 60px 60px 60px;
+  margin: 80px auto -120px auto;
+}
+
+
+main #about h2 {
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+}
+main #about p {
+  width: 70vw;
+  font-size: 1.18rem;
+  line-height: 35px;
+}
+
+
+/* WORKS */
+main #works {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 120px 60px 60px 60px;
+  /* margin: 60px 180px 60px 75px; */
+  margin: 60px auto -140px auto;
+}
+
+main #works .all-projects {
+  width: 65.3vw;
+}
+
+/* CONTACT */
+main #contact {
+   -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 120px 60px 60px 60px;
+  /* margin: 60px 160px 20px 160px; */
+  margin: 60px auto 0px auto;
+}
+
+main #contact .contact-form form {
+ margin-top: 60px;
+  width: 70vw;
+}
+main #contact .contact-form form .form-group:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+    -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 0px;
+  width: 100%;
+}
+main #contact .contact-form form .form-group:nth-child(1) div {
+  margin-right: 0px;
+   margin-bottom: 30px;
+}
+
+main #contact .contact-form form .form-group:nth-child(1) div input {
+  width: 70vw;
+  height: 40px;
+}
+
+main #contact .contact-form form .form-group input {
+  width: 70vw;
+}
+main #contact .contact-form form .form-group textarea {
+  width: 70vw;
+}
+main #contact .contact-form form button {
+ width: 70vw;
+  font-size: 1.2rem;
+  padding: 0.8em 1.6em;
+}
+
+
+/* FOOTER */
+
+footer {
+  margin: 50px 60px;
+}
+
+footer p {
+  color: var(--foreground);
+  font-size: 1.1rem;
+  opacity: 0.7;
+  letter-spacing: 0.04rem;
+  text-align: center;
+}
+}
+
+
+
 
 @media only screen and (min-width: 600px) {
   header .overlay {
@@ -1321,4 +1440,29 @@ footer p {
   #header .nav-button {
   display: none;
 }
+}
+
+
+@media only screen and (max-width: 380px){ main #hero .headings h1 {
+    margin-top: 10px;
+    font-size: 1.9rem;
+    letter-spacing: 0.1rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  main #hero .headings h1 div {
+    word-spacing: 0.5rem;
+    font-size: 2.4rem;
+     text-align: center;
+  }
+
+  main #hero .headings p {
+    font-size: 1rem;
+    letter-spacing: 0.08rem;
+    color: var(--foreground);
+    line-height: 32px;
+    text-align: center;
+  }
+
 }
