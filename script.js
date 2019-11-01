@@ -31,7 +31,7 @@ function loading() {
 
 
 
-  }, 5000);
+  }, 50);
 }
 
 
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener("load", function() {
     setTimeout(() => {
       loading()
-    }, 500);
+    }, 5);
   }, false);
 })
 
@@ -104,3 +104,33 @@ toggleBtn.addEventListener('click', () => {
 });
 
 
+// NAVIGATION
+
+const navButton = document.querySelector('#header .nav-button');
+const navOverlay = document.querySelector('header .overlay');
+const navMenu = document.querySelector('header nav.small-screen');
+const menuItems = document.querySelector('header nav.small-screen ul');
+const menuLinks = document.querySelectorAll('header nav.small-screen ul li a');
+// console.log(navButton)
+
+navButton.addEventListener('click', openMenu);
+menuLinks.forEach(menuLink => {
+  menuLink.addEventListener('click', closeMenu);
+})
+
+function openMenu() {
+  navButton.classList.toggle('close');
+  navOverlay.classList.toggle('appear');
+  navMenu.classList.toggle('open');
+  menuItems.classList.toggle('menu-items-appear');
+
+// console.log('clicked')
+}
+function closeMenu() {
+  navButton.classList.remove('close');
+  navOverlay.classList.remove('appear');
+  navMenu.classList.remove('open');
+  menuItems.classList.remove('menu-items-appear');
+
+// console.log('clicked')
+}
