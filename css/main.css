@@ -80,6 +80,8 @@ html {
   background: var(--tertiary-color);
 }
 
+
+/* LOADING STARTS */
 .wrapper {
   position: relative;
   display: -webkit-box;
@@ -238,7 +240,10 @@ html {
     opacity: 1;
   }
 }
+/* LOADING ENDS */
 
+
+/* HEADER STARTS */
 header {
   opacity: 0;
   display: none;
@@ -549,6 +554,8 @@ header .mode-toggle-button img {
   cursor: pointer;
 }
 
+/* HEADER ENDS */
+
 @-webkit-keyframes fadeDown {
   from {
     -webkit-transform: translateY(-50px);
@@ -653,6 +660,8 @@ header .mode-toggle-button img {
   }
 }
 
+
+/* MAIN STARTS */
 main {
   opacity: 0;
   display: none;
@@ -663,6 +672,8 @@ main {
   overflow-x: hidden;
 }
 
+
+/* HERO SECTION STARTS */
 main #hero {
   scroll-margin: 10px;
   scroll-snap-align: start;
@@ -858,7 +869,9 @@ main #hero .scroll-down-arrow img {
     opacity: 0;
   }
 }
+/* HERO SECTION ENDS */
 
+/* ABOUT SECTION STARTS */
 main #about {
   scroll-margin: 10px;
   scroll-snap-align: start;
@@ -908,7 +921,10 @@ main #about p {
   font-size: 1.1rem;
   line-height: 35px;
 }
+/* ABOUT SECTION ENDS */
 
+
+/* WORKS SECTION STARTS */
 main #works {
   scroll-margin: 10px;
   scroll-snap-align: start;
@@ -1024,7 +1040,10 @@ main #works .all-projects:hover {
   background-color: var(--senary-color);
   color: var(--light);
 }
+/* WORKS SECTION ENDS */
 
+
+/* CONTACT SECTION STARTS */
 main #contact {
   scroll-margin: 10px;
   scroll-snap-align: start;
@@ -1038,7 +1057,7 @@ main #contact {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  padding: 120px 90px 60px;
+  padding: 120px 90px 60px 244px;
   /* margin: 60px 160px 20px 160px; */
   margin: 60px auto 20px auto;
 }
@@ -1192,7 +1211,10 @@ main #contact .contact-form form button:hover {
   background-color: var(--senary-color);
   color: var(--light);
 }
+/* CONTACT SECTION ENDS */
+/* MAIN ENDS */
 
+/* FOOTER STARTS*/
 footer {
   opacity: 0;
   display: none;
@@ -1208,7 +1230,9 @@ footer p {
   letter-spacing: 0.08rem;
   text-align: center;
 }
+/* FOOTER ENDS*/
 
+/* MEDIA QUERIES */
 /* 1200px */
 @media only screen and (max-width: 1200px) {
   .wrapper .loader h2 {

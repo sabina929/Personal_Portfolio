@@ -13,8 +13,6 @@ const scrollDownArrow = document.querySelector("#hero>div.scroll-down-arrow>img"
 const email = document.querySelector("main>#hero>.email>a>p");
 
 
-
-
 function loading() {
   setTimeout(() => {
     wrapper.style.display = 'none';
@@ -29,9 +27,7 @@ function loading() {
     footer.style.display = 'block';
     setTimeout(() => (footer.style.opacity = 1), 50);
 
-
-
-  }, 50);
+  }, 5000);
 }
 
 
@@ -40,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener("load", function() {
     setTimeout(() => {
       loading()
-    }, 5);
+    }, 500);
   }, false);
 })
 
@@ -94,7 +90,7 @@ toggleBtn.addEventListener('click', () => {
   // get their lightMode setting
   lightMode = localStorage.getItem('lightMode');
 
-  // if it not current enabled, enable it
+  // if it is not current enabled, enable it
   if (lightMode !== 'enabled') {
     enableLightMode();
   // if it has been enabled, turn it off  
