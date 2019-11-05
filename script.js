@@ -11,7 +11,8 @@ const artstationIcon = document.querySelector('.portfolio-icons>a:nth-child(4)>i
 const logo = document.querySelector("#header>div.logo>a>img")
 const scrollDownArrow = document.querySelector("#hero>div.scroll-down-arrow>img");
 const email = document.querySelector("main>#hero>.email>a>p");
-
+const themeColorMeta = document.querySelector("meta[name='theme-color']");
+// console.log(themeColorMeta)
 
 function loading() {
   setTimeout(() => {
@@ -51,6 +52,12 @@ let lightMode = localStorage.getItem('lightMode');
 const enableLightMode = () => {
   document.body.classList.add('lightmode');
 
+  let themeColor = themeColorMeta.getAttribute("content");
+  // console.log("enableLightMode", themeColor)
+  themeColor = "#f3ebeb";
+  themeColorMeta.setAttribute("content", themeColor)
+  // console.log("enableLightMode", themeColorMeta)
+
   logo.src = 'images/icons/img1-24.png';
   toggleBtnImg.src = './images/icons/img2-09.png';
 
@@ -66,6 +73,12 @@ const enableLightMode = () => {
 
 const disableLightMode = () => {
   document.body.classList.remove('lightmode');
+
+  let themeColor = themeColorMeta.getAttribute("content");
+  // console.log("disableLightMode", themeColor)
+  themeColor = "#18081c";
+  themeColorMeta.setAttribute("content", themeColor)
+  // console.log("disableLightMode", themeColorMeta)
 
   logo.src = 'images/icons/img1-23.png';
   toggleBtnImg.src = './images/icons/img1-01.png';
