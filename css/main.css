@@ -893,7 +893,8 @@ main #about {
 
 main #about h2 {
   display: inline-block;
-  margin-bottom: 240px;
+  /* margin-bottom: 240px; */
+  margin-bottom: 380px;
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
   font-style: italic;
