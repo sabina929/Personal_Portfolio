@@ -80,7 +80,6 @@ html {
   background: var(--tertiary-color);
 }
 
-
 /* LOADING STARTS */
 .wrapper {
   position: relative;
@@ -242,7 +241,6 @@ html {
 }
 /* LOADING ENDS */
 
-
 /* HEADER STARTS */
 header {
   opacity: 0;
@@ -353,7 +351,6 @@ header nav.small-screen {
   z-index: 11;
   background-color: var(--background);
   /* background-color: orange; */
-
   display: none;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -406,7 +403,6 @@ header nav.small-screen ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-
   margin: 0 auto;
 }
 
@@ -415,7 +411,6 @@ header nav.small-screen ul li {
   list-style: none;
   margin-bottom: 20px;
   text-align: center;
-
   opacity: 0;
   transform: translateY(-5px);
   display: none;
