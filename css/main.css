@@ -261,8 +261,8 @@ header {
   right: 0px;
   z-index: 2;
   background-color: var(--background);
-  -webkit-transform: translateY(-50px);
-  transform: translateY(-50px);
+  -webkit-transform: translateY(-80px);
+  transform: translateY(-80px);
   opacity: 0;
   -webkit-animation: fadeDown 1.2s ease 0.5s forwards;
   animation: fadeDown 1.2s ease 0.5s forwards;
