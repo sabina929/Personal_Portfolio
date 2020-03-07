@@ -998,6 +998,7 @@ main #works .works-container .proj-link img {
   opacity: 0.85;
   width: 240px;
   height: 180px;
+  object-fit: cover;
 }
 
 main #works .works-container .proj-link:hover {
