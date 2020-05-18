@@ -1245,13 +1245,14 @@ footer p {
 
 /* MEDIA QUERIES */
 
-/* 1433px */
+/* 1432px */
 @media only screen and (max-width: 1432px) {
   /* ABOUT */
   main #about h2 {
     margin-bottom: 450px;
     font-size: 1.5rem;
   }
+  
 }
 /* 1354px */
 @media only screen and (max-width: 1354px) {
@@ -1261,6 +1262,33 @@ footer p {
     font-size: 1.5rem;
   }
 }
+/* 1201px */
+@media only screen and (min-width: 1201px) {
+  main #contact .contact-form form .form-group input#name, main #contact .contact-form form .form-group input#email {
+    width: 350px;
+  }
+  main #contact .contact-form form .form-group input#subject {
+    width: 750px;
+  }
+  main #contact .contact-form form .form-group textarea {
+    width: 750px;
+  }
+  
+}
+/* 1301px */
+@media only screen and (min-width: 1301px) {
+  main #contact .contact-form form .form-group input#name, main #contact .contact-form form .form-group input#email {
+    width: 405px;
+  }
+  main #contact .contact-form form .form-group input#subject {
+    width: 860px;
+  }
+  main #contact .contact-form form .form-group textarea {
+    width: 860px;
+  }
+  
+}
+
 /* 1200px */
 @media only screen and (max-width: 1200px) {
   .wrapper .loader h2 {
@@ -1430,6 +1458,7 @@ footer p {
     font-size: 1.2rem;
     padding: 0.8em 1.6em;
   }
+  
 
   /* FOOTER */
 
