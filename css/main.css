@@ -1653,7 +1653,7 @@ footer p {
     width: 70vw;
     font-size: 1.18rem;
     line-height: 35px;
-    text-align: justify;
+    text-align: left;
   }
 
   /* WORKS */
