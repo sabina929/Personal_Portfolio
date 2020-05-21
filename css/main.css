@@ -1353,7 +1353,6 @@ footer p {
   }
 
   /* ABOUT */
-
   main #about {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -1459,9 +1458,7 @@ footer p {
     padding: 0.8em 1.6em;
   }
   
-
   /* FOOTER */
-
   footer {
     margin: 50px 60px;
   }
@@ -1480,11 +1477,9 @@ footer p {
   .wrapper .loader h2 {
     font-size: 1.8rem;
   }
-
   header .logo {
     margin-right: 100px;
   }
-
   header nav.big-screen ul li:not(:last-child) {
     margin-right: 60px;
   }
@@ -1492,9 +1487,7 @@ footer p {
     margin-right: 40px;
   }
 
-
 /* HERO */
-
   main #hero {
     padding: 30px 0;
     margin: 142px 60px 60px 60px;
@@ -1529,7 +1522,6 @@ footer p {
   main #hero .email {
     z-index: 0;
     right: 0.5%;
-    /* top: 17.5%; */
     top: 190px;
     width: 30px;
     margin-top: 0;
@@ -1540,7 +1532,6 @@ footer p {
   }
 
   /* ABOUT */
-
   main #about {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -1572,7 +1563,6 @@ footer p {
     -ms-flex-align: end;
     align-items: flex-end;
     padding: 120px 115px 60px 115px;
-    /* margin: 60px 180px 60px 75px; */
     margin: 60px auto -140px auto;
   }
 
@@ -1591,9 +1581,6 @@ footer p {
     width: 260px;
     margin: 35px 0px;
   }
-
-
-
 }
 
 /* 600px */
@@ -1618,7 +1605,6 @@ footer p {
   main #hero .portfolio-icons {
     position: fixed;
     left: 3%;
-    /* top: 25%; */
     top: 215px;
     width: 30px;
     margin-top: 0;
@@ -1649,7 +1635,6 @@ footer p {
   main #hero .email {
     z-index: 0;
     right: 0.5%;
-    /* top: 17.5%; */
     top: 190px;
     width: 30px;
     margin-top: 0;
@@ -1660,7 +1645,6 @@ footer p {
   }
 
   /* ABOUT */
-
   main #about {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -1694,7 +1678,6 @@ footer p {
     -ms-flex-align: center;
     align-items: center;
     padding: 120px 60px 60px 60px;
-    /* margin: 60px 180px 60px 75px; */
     margin: 60px auto -140px auto;
   }
 
@@ -1730,7 +1713,6 @@ footer p {
     -ms-flex-align: center;
     align-items: center;
     padding: 120px 60px 60px 60px;
-    /* margin: 60px 160px 20px 160px; */
     margin: 60px auto 0px auto;
   }
 
