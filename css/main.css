@@ -602,6 +602,31 @@ header .mode-toggle-button img {
     opacity: 1;
   }
 }
+@-webkit-keyframes portfiolioIconFadeDown2 {
+  from {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: .6;
+  }
+}
+
+@keyframes portfiolioIconFadeDown2 {
+  from {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: .6;
+  }
+}
 
 @-webkit-keyframes emailFadeDown {
   from {
@@ -626,6 +651,31 @@ header .mode-toggle-button img {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+@-webkit-keyframes emailFadeDown2 {
+  from {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: .6;
+  }
+}
+
+@keyframes emailFadeDown2 {
+  from {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: .6;
   }
 }
 
@@ -1315,7 +1365,8 @@ footer p {
   main #hero .portfolio-icons {
     position: fixed;
     left: 3%;
-    top: 215px;
+    /* top: 215px; */
+    top: 46vh;
     width: 30px;
     margin-top: 0;
   }
@@ -1343,7 +1394,8 @@ footer p {
     z-index: 0;
     right: 0.5%;
     /* top: 17.5%; */
-    top: 190px;
+    /* top: 190px; */
+    top: 46vh;
     width: 30px;
     margin-top: 0;
   }
@@ -1495,7 +1547,8 @@ footer p {
   main #hero .portfolio-icons {
     position: fixed;
     left: 3%;
-    top: 215px;
+    /* top: 215px; */
+    top: 42vh;
     width: 30px;
     margin-top: 0;
   }
@@ -1522,7 +1575,8 @@ footer p {
   main #hero .email {
     z-index: 0;
     right: 0.5%;
-    top: 190px;
+    /* top: 190px; */
+    top: 40vh;
     width: 30px;
     margin-top: 0;
   }
@@ -1548,8 +1602,8 @@ footer p {
     margin-bottom: 32px;
     font-size: 1.5rem;
   }
-  main #about p {
-    width: 70vw;
+  main #about .parags p {
+    width: 65vw;
     font-size: 1rem;
     line-height: 35px;
   }
@@ -1605,9 +1659,29 @@ footer p {
   main #hero .portfolio-icons {
     position: fixed;
     left: 3%;
-    top: 215px;
+    /* top: 215px; */
+    top: 36vh;
     width: 30px;
     margin-top: 0;
+  }
+  main #hero .portfolio-icons a:nth-child(1) {
+    -webkit-animation: portfiolioIconFadeDown2 1s ease 1s forwards;
+    animation: portfiolioIconFadeDown2 1s ease 1s forwards;
+  }
+  
+  main #hero .portfolio-icons a:nth-child(2) {
+    -webkit-animation: portfiolioIconFadeDown2 1s ease 1.2s forwards;
+    animation: portfiolioIconFadeDown2 1s ease 1.2s forwards;
+  }
+  
+  main #hero .portfolio-icons a:nth-child(3) {
+    -webkit-animation: portfiolioIconFadeDown2 1s ease 1.4s forwards;
+    animation: portfiolioIconFadeDown2 1s ease 1.4s forwards;
+  }
+  
+  main #hero .portfolio-icons a:nth-child(4) {
+    -webkit-animation: portfiolioIconFadeDown2 1s ease 1.6s forwards;
+    animation: portfiolioIconFadeDown2 1s ease 1.6s forwards;
   }
 
   main #hero .headings h1 {
@@ -1635,9 +1709,12 @@ footer p {
   main #hero .email {
     z-index: 0;
     right: 0.5%;
-    top: 190px;
+    /* top: 190px; */
+    top: 34vh;
     width: 30px;
     margin-top: 0;
+    -webkit-animation: emailFadeDown2 1s ease 1s forwards;
+    animation: emailFadeDown2 1s ease 1s forwards;
   }
 
   main #hero .email a p {
@@ -1802,5 +1879,15 @@ footer p {
     color: var(--foreground);
     line-height: 32px;
     text-align: center;
+  }
+
+  main #hero .portfolio-icons {
+    left: 2.7%;
+}
+  main #about {
+    padding: 120px 50px 60px 50px;
+}
+  main #about .parags p {
+    width: 73vw;
   }
 }
