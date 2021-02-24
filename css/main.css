@@ -837,6 +837,10 @@ main #hero .headings h1 div {
   animation: titleDown 1.2s ease 1.3s forwards;
 }
 
+main #hero .headings div.titles {
+  display: flex;
+  flex-direction: row;
+}
 main #hero .headings p {
   font-family: "Open Sans", sans-serif;
   font-size: 1.4rem;
@@ -849,17 +853,25 @@ main #hero .headings p {
   opacity: 0;
 }
 
-main #hero .headings p:nth-child(2) {
+main #hero .headings p:nth-child(1)::after {
+  padding: 18px;
+  content: '/';
+}
+main #hero .headings p:nth-child(2)::after {
+  padding: 18px;
+  content: '/';
+}
+main #hero .headings p:nth-child(1) {
   -webkit-animation: portfiolioIconFadeDown 1s ease 1.5s forwards;
   animation: portfiolioIconFadeDown 1s ease 1.5s forwards;
 }
 
-main #hero .headings p:nth-child(3) {
+main #hero .headings p:nth-child(2) {
   -webkit-animation: portfiolioIconFadeDown 1s ease 1.7s forwards;
   animation: portfiolioIconFadeDown 1s ease 1.7s forwards;
 }
 
-main #hero .headings p:nth-child(4) {
+main #hero .headings p:nth-child(3) {
   -webkit-animation: portfiolioIconFadeDown 1s ease 1.9s forwards;
   animation: portfiolioIconFadeDown 1s ease 1.9s forwards;
 }
@@ -1697,11 +1709,46 @@ footer p {
   
 }
 
+/* 780px */
+@media only screen and (max-width: 780px) {
+  main #hero {
+      margin: 142px 84px 60px 84px;
+  }
+}
 /* 600px */
 @media only screen and (max-width: 720px) {
 
   header nav.big-screen {
     display: none;
+  }
+}
+/*680*/
+@media only screen and (max-width: 680px) {
+  main #hero .headings h1 {
+    text-align: center;
+  }
+  main #hero .headings h1 div {
+    text-align: center;
+  }
+  main #hero .headings div.titles {
+    display: flex;
+    flex-direction: column;
+  }
+  main #hero .headings p {
+    /* font-size: 1.16rem;
+    letter-spacing: 0.08rem;
+    color: var(--foreground);
+    line-height: 32px; */
+    text-align: center;
+  }
+  
+  main #hero .headings p:nth-child(1)::after {
+    padding: 0px;
+    content: '';
+  }
+  main #hero .headings p:nth-child(2)::after {
+    padding: 0px;
+    content: '';
   }
 }
 /* 600px */
@@ -1721,7 +1768,7 @@ footer p {
 
   main #hero {
     padding: 30px 0;
-    margin: 142px 50px 60px 50px;
+    margin: 142px 84px 60px 84px;
   }
   main #hero .portfolio-icons {
     position: fixed;
@@ -1911,7 +1958,28 @@ footer p {
     text-align: center;
   }
 }
-
+/*580*/
+@media only screen and (max-width: 580px) {
+  main #hero .headings h1 {
+    text-align: center;
+  }
+  main #hero .headings h1 div {
+    text-align: center;
+  }
+  main #hero .headings div.titles {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main #hero .headings p:nth-child(1)::after {
+    padding: 0px;
+    content: '';
+  }
+  main #hero .headings p:nth-child(2)::after {
+    padding: 0px;
+    content: '';
+  }
+}
 @media only screen and (min-width: 721px) {
   header .overlay {
     display: none;
@@ -1924,6 +1992,7 @@ footer p {
     display: none;
   }
 }
+
 
 @media only screen and (max-width: 380px) {
   main #hero .headings h1 {
