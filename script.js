@@ -28,7 +28,7 @@ function loading() {
     footer.style.display = 'block';
     setTimeout(() => (footer.style.opacity = 1), 50);
 
-  }, 5000);
+  }, 4200);
 }
 
 
